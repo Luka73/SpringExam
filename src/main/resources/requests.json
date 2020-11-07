@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "742bca9a-6fe0-4477-82fa-c8d35d87e5d5",
+		"name": "SpringExam-MCIT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "addresses",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"streetNumber\" : 811,\r\n        \"streetName\" : \"Davaar\",\r\n        \"city\" : \"Montreal\",\r\n        \"country\" : \"Canada\"\r\n    },\r\n\r\n     {\r\n        \"streetNumber\" : 869,\r\n        \"streetName\" : \"Coriander\",\r\n        \"city\" : \"Los Angeles\",\r\n        \"country\" : \"USA\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/addresses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addresses",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/addresses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"addresses"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Teacher",
+			"item": [
+				{
+					"name": "teachers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"firstName\" : \"George\",\r\n        \"lastName\" : \"Orwell\",\r\n        \"city\" : \"London\",\r\n        \"salary\": 120000\r\n    },\r\n\r\n    {\r\n        \"firstName\" : \"Jacques\",\r\n        \"lastName\" : \"Brel\",\r\n        \"city\" : \"Bobigny\",\r\n        \"salary\": 90000\r\n    },\r\n    \r\n    {\r\n        \"firstName\" : \"Johnny\",\r\n        \"lastName\" : \"Cash\",\r\n        \"city\" : \"Nashville\",\r\n        \"salary\": 75000\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/teachers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"teachers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "teachers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/teachers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"teachers"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"firstName\" : \"Sindy\",\r\n        \"lastName\" : \"Loya\",\r\n        \"city\" : \"Los Angeles\",\r\n        \"program\" : \"Java\",\r\n        \"address\": {\r\n            \"streetNumber\" : 869,\r\n            \"streetName\" : \"Coriander\",\r\n            \"city\" : \"Los Angeles\",\r\n            \"country\" : \"USA\"\r\n        }\r\n    },\r\n        {\r\n        \"firstName\" : \"Christiano\",\r\n        \"lastName\" : \"Ronaldo\",\r\n        \"city\" : \"Madrid\",\r\n        \"program\" : \"Oracle\",\r\n        \"address\": {\r\n            \"streetNumber\" : 811,\r\n            \"streetName\" : \"Davaar\",\r\n            \"city\" : \"Montreal\",\r\n            \"country\" : \"Canada\"\r\n        }\r\n    },\r\n        {\r\n        \"firstName\" : \"Diego\",\r\n        \"lastName\" : \"Maradona\",\r\n        \"city\" : \"Napolis\",\r\n        \"program\" : \"Java\",\r\n        \"address\": {\r\n            \"streetNumber\" : 869,\r\n            \"streetName\" : \"Coriander\",\r\n            \"city\" : \"Los Angeles\",\r\n            \"country\" : \"USA\"\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "students",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8087/students",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8087",
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
